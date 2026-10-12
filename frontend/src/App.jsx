@@ -240,7 +240,7 @@ function App() {
         )}
       </section>
 
-      <footer className="page-caption">Links are saved securely in your MongoDB database.</footer>
+      <footer className="page-caption">Created by - Kritika Namdev ❤️.</footer>
     </main>
   );
 }
