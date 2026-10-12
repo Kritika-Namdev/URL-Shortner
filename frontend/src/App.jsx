@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import QRCode from "qrcode";
+import ThemeToggle from "./ThemeToggle.jsx";
 
 const API_BASE_URL = (
   import.meta.env.VITE_API_BASE_URL ||
@@ -115,7 +116,10 @@ function App() {
           <span className="brand-mark"><img src="/url.svg" alt="" /></span>
           <span>linkdrop</span>
         </a>
-        <span className="header-note">Simple links. Clear stats.</span>
+        <div className="header-actions">
+          <span className="header-note">Simple links. Clear stats.</span>
+          <ThemeToggle />
+        </div>
       </header>
 
       <section className="shortener-card" aria-labelledby="page-title">
