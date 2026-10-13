@@ -13,8 +13,7 @@ const app = express();
 const port = Number(process.env.PORT || 5000);
 const baseUrl = (
   process.env.BASE_URL ||
-  process.env.RENDER_EXTERNAL_URL ||
-  `http://localhost:${port}`
+  process.env.RENDER_EXTERNAL_URL
 ).replace(/\/$/, "");
 const frontendDist = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
